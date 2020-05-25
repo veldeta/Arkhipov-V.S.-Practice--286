@@ -8,7 +8,7 @@
           <a class="dropdown-item" href="Avtori.php">Войти</a>
           <a class="dropdown-item" href="Reges.php">Регестрация</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="https://vk.com/andryxa_y">Моя страница в Vk.com</a>
+          <a class="dropdown-item" href="#">Моя страница в Vk.com</a>
         </div>
       </li>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
