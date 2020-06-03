@@ -20,7 +20,7 @@ $result = mysqli_query($mysqli,"SELECT * FROM users");
     <?php if($_COOKIE['id'] == "") :?>
     <div class="container cen">
         <h1 align="center">Добро пожаловать на планету Земля</h1><br>
-        <h2 align="center">Ты у нас тут первый раз? <br> Тогда я тебе предлогаю пройти <a href="html/Reges.php">регистрацию</a> для дальнейших путешествий!</h2>
+        <h2 align="center">Ты у нас тут первый раз? <br> Тогда я тебе предлагаю пройти <a href="html/Reges.php">регистрацию</a> для дальнейших путешествий!</h2>
         <h2 align="center">А если ты уже бывал у нас, то просто войди в свой <a href="html/auth.html.php">кабинет</a></h2>
     </div>
     <?php else: ?>
