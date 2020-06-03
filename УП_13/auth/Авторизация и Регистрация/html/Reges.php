@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,12 +32,22 @@
 					    <input type="password" name="pass2" class="form-control" id="exampleFormControlInput1" placeholder="Повторите пароль" required>
   					</div>
                     <h6 align="center">Если у тебя уже есть аккаунт, то <a href="auth.html.php">войди.</a></h6><br>
+
+                        <?php
+                            if($_SESSION['message']){
+                              echo ' <p class="msg"> ' . $_SESSION['message'] .  ' </p>';
+                            }
+                            unset($_SESSION['message']);
+                        ?>
+
 					<input type="submit" name="submit" value="Зарегистрироваться" class="btn btn-primary sub">
 				</form>
+
 		    </div>
 		    <div class="col"></div>
 	 	</div>
 	</div>
+
 
 </body>
 </html>

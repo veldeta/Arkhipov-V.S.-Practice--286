@@ -1,4 +1,5 @@
 <?php
+session_start();
 $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_STRING);
 $login = filter_var(trim($_POST['login']), FILTER_SANITIZE_STRING);
 $name = filter_var(trim($_POST['name']), FILTER_SANITIZE_STRING);
@@ -29,8 +30,7 @@ if($pass == $pass2) {
 
     header('Location: ../html/auth.html.php');
 } else {
-    echo "Пароль должен совподать";
-    print "<form action = \"../html/Reges.php \">";
-    print "<input type=\"submit\" value=\"Назад\">";
-    print "</form>";
+    $_SESSION['message'] = "Не совподают пароли";
+    header('Location: ../html/Reges.php');
+
 }
