@@ -22,7 +22,6 @@ setcookie('pass',$user['password'], time() + 3600, "/");
 setcookie('email',$user['email'], time() + 3600, "/");
 setcookie('surname',$user['Surname'], time() + 3600, "/");
 
-
 $mysql->close();
 
 header('Location: ../index.php');
