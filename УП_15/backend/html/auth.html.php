@@ -1,5 +1,11 @@
 <?php
     session_start();
+
+if($_COOKIE['admin']){
+    header('location: ../php/admin.php');
+} elseif ($_COOKIE['name']){
+    header('location: ../index.php');
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,7 +20,7 @@
   		<div class="row">
 		    <div class="col"></div>
 		    <div class="col">
-		     	<form action="../../../УП_14/rule-users/pop/php/auth.php" method="post" class="topup">
+		     	<form action="../php/auth.php" method="post" class="topup">
 		     		<div class="form-group">
 					  <p align="Center">  <label for="exampleFormControlInput1"><big><big><big>Войти в аккаунт</big></big></big></label></p>
 					    <input type="text" name="login" class="form-control" id="exampleFormControlInput1" placeholder="Логин" required>
@@ -26,7 +32,7 @@
                     <p>
                         <?php
                         if($_SESSION['message']){
-                            echo ' <p class="msg"> ' . $_SESSION['message'] .  ' </p>';
+                            echo ' <p class="mgs"> ' . $_SESSION['message'] .  ' </p>';
                         }
                         unset($_SESSION['message']);
                         ?>
