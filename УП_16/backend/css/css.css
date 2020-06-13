@@ -1,0 +1,174 @@
+.fon {
+    background-size: 100%;
+}
+
+.Rectangle_1 {
+    position: absolute;
+    width: 460px;
+    height: 68px;
+    left: -100px;
+    top: 390px;
+    border-radius: 23px;
+}
+
+.Rectangle_2 {
+    position: absolute;
+    width: 460px;
+    height: 68px;
+    left: -100px;
+    top: 320px;
+    border-radius: 23px;
+}
+
+.Rectangle_3 {
+    position: absolute;
+    width: 270px;
+    height: 37px;
+    left: 15%;
+    top: 354px;
+}
+
+.Rectangle_4 {
+    position: absolute;
+    width: 270px;
+    height: 37px;
+    left: 62.5%;
+    top: 354px;
+}
+
+.Rectangle_5 {
+    position: absolute;
+    width: 270px;
+    height: 37px;
+    left: 15%;
+    top: 390px;
+}
+
+.Rectangle_6 {
+    position: absolute;
+    width: 270px;
+    height: 37px;
+    left: 62.5%;
+    top: 390px;
+}
+
+.text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: -35.5%;
+    top: 70px;
+}
+
+.rok {
+    position: inherit;
+    width: 50px;
+    height: 40px;
+}
+
+.topup {
+    margin-top: 80%;
+}
+
+.sub {
+    margin-left: 95px;
+    height: 70px;
+    width: 170px;
+    border-radius: 5px 50px 5px 50px;
+}
+.up {
+    margin-top: 33%;
+}
+
+.search_2 {
+    width: 380px;
+    height: 50px;
+    margin-left: 0px;
+    margin-top: 110px;
+    border-radius: 23px;
+}
+
+.search_1 {
+    width: 380px;
+    height: 50px;
+    border-radius: 23px;
+}
+
+.rayt {
+    top: 130px;
+}
+
+.kur {
+    margin-top: 140px;
+}
+
+.btn_1 {
+    margin-left: 42.5%;
+}
+
+.tbl {
+    margin-top: 90px;
+}
+.msg{
+    border: 2px solid #6baef3;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 136px;
+}
+.mgs{
+    border: 2px solid #6baef3;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 400px;
+    margin-left: -25px;
+    margin-top: -20px;
+}
+.oil{
+    width: 200px;
+    margin-top: 360px;
+    margin-left: 50px;
+}
+.oil2{
+    margin-left: 50px;
+    margin-top: 70%;
+
+}
+.color{
+    margin-top: -49px;
+    margin-block-end: 10px;
+}
+.left{
+    margin-left: 50px;
+}
+.r{
+    margin-left: -137px;
+}
+.l{
+    margin-left: -450px;
+}
+.gigi{
+    margin-left: -165px;
+}
+.t{
+    margin-left: 170px;
+}
+.g{
+    margin-left: 20px;
+    margin-top: 160px;
+    background: antiquewhite;
+}
+

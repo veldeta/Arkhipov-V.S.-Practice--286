@@ -11,7 +11,7 @@ switch ($gold) {
         header('location: ../html/change.php');
         break;
     case '2':
-        header('location: ../html/delete.php');
+        header('location: ../html/code_delete.php');
         break;
     case '3':
         header('location: ../html/role.html.php');
