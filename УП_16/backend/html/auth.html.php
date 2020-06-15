@@ -12,7 +12,7 @@ if($_COOKIE['admin']){
 <head>
 	<meta charset="utf-8">
 	<title>Авторизация</title>
-	<? include "../Connections/Connections.php" ?>
+    <? include "../Connections/connect/css/Connections.php" ?>
 </head>
 <body background="../img/262730-Sepik.jpg" class="fon">
 	<? include "top.php" ?>
@@ -44,5 +44,6 @@ if($_COOKIE['admin']){
 		    <div class="col"></div>
 	 	</div>
 	</div>
+    <? include "../Connections/connect/js/Connections.php" ?>
 </body>
 </html>

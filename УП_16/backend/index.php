@@ -19,7 +19,7 @@ $result = mysqli_query($mysqli,"SELECT * FROM users");
 <head>
     <meta charset="UTF-8">
     <title>Meriodasu</title>
-    <? include "Connections/Connections_index.php" ?>
+    <? include "Connections/connect/css/Connections_index.php" ?>
     <link rel = "stylesheet" href = "Css/style.css">
 </head>
 <body background = "img/fonstola.ru-100829.jpg" class="fon">
@@ -113,13 +113,11 @@ $result = mysqli_query($mysqli,"SELECT * FROM users");
             </div>
     </div>
     <?php endif; ?>
-
+    <? include "Connections/connect/js/Connections_index.php" ?>
 </body>
 </html>
 <?php
-
-if($_POST)
-{
+if($_POST){
     $ID = $_POST['ID'];
     $email = $_POST['email'];
     $login = $_POST['login'];
@@ -130,8 +128,7 @@ if($_POST)
 
     $pass = md5($pass);
 
-    if($mysqli->connect_errno)
-    {
+    if($mysqli->connect_errno){
         printf("Не удалось подключиться с базам данных, попробуйте поже.", $mysqli->connect_error);
     }
     $result = $mysqli->query("UPDATE ".$db_table." SET   `email` = '".$email."', `login`='".$login."',`password`= '".$pass."',`name`= '".$name."',`Surname`='".$surname."' WHERE ID=".$ID);

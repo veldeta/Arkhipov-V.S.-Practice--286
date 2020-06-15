@@ -8,7 +8,7 @@ if(!$_COOKIE['admin']){
 <head>
     <meta charset="UTF-8">
     <title><?= $_COOKIE['admin']?></title>
-    <? include "../Connections/Connections.php" ?>
+    <? include "../Connections/connect/css/Connections.php" ?>
     <link rel = "stylesheet" href = "../Css/style.css">
 </head>
 <body background="../img/super.ua-1525935571.jpg" class="fon">
@@ -55,6 +55,6 @@ if(!$_COOKIE['admin']){
             <div class="col-6 col-md-4"></div>
         </div>
     </div>
-
+    <? include "../Connections/connect/js/Connections.php" ?>
 </body>
 </html>
