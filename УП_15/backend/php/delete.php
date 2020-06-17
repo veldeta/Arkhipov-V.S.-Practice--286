@@ -7,5 +7,5 @@ if($_POST) {
     $mysql->query("UPDATE `users` SET `role`= '4' WHERE ID=". $ID);
     $_SESSION['role'] = $role;
     $_SESSION['message'] = 'Вы удалили роль';
-    header('location: ../index.php');
+    header('location: ../lich.php');
 }

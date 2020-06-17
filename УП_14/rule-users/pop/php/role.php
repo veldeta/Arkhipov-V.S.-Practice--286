@@ -19,7 +19,7 @@ switch ($_POST['role']){
         $result = $mysqli->query("UPDATE ".$db_table." SET `role`= '0' WHERE ID=".$ID);
         $_SESSION['role'] = $role;
         $_SESSION['message'] = "Вы поменяли роль";
-        header('Location: ../index.php');
+        header('Location: ../lich.php');
         break;
     case '1':
         $ID = $_POST['ID'];
@@ -30,7 +30,7 @@ switch ($_POST['role']){
         $result = $mysqli->query("UPDATE ".$db_table." SET `role`= '1' WHERE ID=".$ID);
         $_SESSION['role'] = $role;
         $_SESSION['message'] = "Вы поменяли роль";
-        header('Location: ../index.php');
+        header('Location: ../lich.php');
         break;
     case '2':
         $ID = $_POST['ID'];
@@ -41,7 +41,7 @@ switch ($_POST['role']){
         $result = $mysqli->query("UPDATE ".$db_table." SET `role`= '2' WHERE ID=".$ID);
         $_SESSION['role'] = $role;
         $_SESSION['message'] = "Вы поменяли роль";
-        header('Location: ../index.php');
+        header('Location: ../lich.php');
         break;
     case '3':
         $ID = $_POST['ID'];
@@ -52,6 +52,6 @@ switch ($_POST['role']){
         $result = $mysqli->query("UPDATE".$db_table."SET `role`= '3' WHERE ID=".$ID);
         $_SESSION['role'] = $role;
         $_SESSION['message'] = "Вы поменяли роль";
-        header('Location: ../index.php');
+        header('Location: ../lich.php');
         break;
 }

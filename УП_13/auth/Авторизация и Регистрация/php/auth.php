@@ -25,4 +25,4 @@ setcookie('surname',$user['Surname'], time() + 3600, "/");
 
 $mysql->close();
 
-header('Location: ../index.php');
+header('Location: ../lich.php');

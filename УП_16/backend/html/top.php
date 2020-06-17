@@ -14,7 +14,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="../../../УП_14/rule-users/pop/index.php">Главная страница <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../index.php">Главная страница <span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>

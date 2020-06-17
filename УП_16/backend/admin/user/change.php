@@ -24,9 +24,9 @@ $result = mysqli_query($mysql, "SELECT * FROM users");
                 <?if($_SESSION['ru'] == true) :?>
                 <form action="code/code_change.php" method="post" class="oil">
                     <input type="hidden" name="ID" value="<?=$_SESSION['ID']?>">
-                    <input type="email" name="email" value="<?=$_SESSION['email']?>" class="form-control" id="exampleFormControlInput1" placeholder="Почта">
-                    <input type="text" name="login" value="<?=$_SESSION['login']?>" class="form-control" id="exampleFormControlInput1" placeholder="Логин">
-                    <input type="password" name="password" class="form-control" id="exampleFormControlInput1" placeholder="Пароль">
+                    <input type="email" name="email" value="<?=$_SESSION['email']?>" class="form-control" id="exampleFormControlInput1" placeholder="Почта" required>
+                    <input type="text" name="login" value="<?=$_SESSION['login']?>" class="form-control" id="exampleFormControlInput1" placeholder="Логин" required>
+                    <input type="password" name="password" class="form-control" id="exampleFormControlInput1" placeholder="Пароль" required>
                     <input type="submit"  class="top btn btn-warning" value="Изменить">
                 </form>
                 <?endif;?>

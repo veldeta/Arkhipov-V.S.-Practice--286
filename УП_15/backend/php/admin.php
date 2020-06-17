@@ -1,6 +1,6 @@
 <?php
 if(!$_COOKIE['admin']){
-    header('location: ../index.php');
+    header('location: ../lich.php');
 }
 ?>
 <!DOCTYPE>

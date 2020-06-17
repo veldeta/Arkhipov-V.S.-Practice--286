@@ -4,7 +4,7 @@
 if($_COOKIE['admin']){
     header('location: ../php/admin.php');
 } elseif ($_COOKIE['name']){
-    header('location: ../index.php');
+    header('location: ../lich.php');
 }
 ?>
 <!DOCTYPE html>

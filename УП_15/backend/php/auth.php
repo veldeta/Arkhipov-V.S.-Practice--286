@@ -38,5 +38,5 @@ if($login == './admin/.ad' || $login == './admin/.ab' || $login == './admin/.gb'
     $_SESSION['role'];
     $mysql->close();
 
-    header('Location: ../index.php');
+    header('Location: ../lich.php');
 }

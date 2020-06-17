@@ -7,4 +7,4 @@
     setcookie('email',$user['email'], time() - 3600, "/");
     setcookie('surname',$user['Surname'], time() - 3600, "/");
 
-    header('Location: ../index.php');
+    header('Location: ../lich.php');
