@@ -91,7 +91,7 @@ $result = mysqli_query($mysql,"SELECT * FROM flights");
                 <td>
                     <?php
                     if($_SESSION['admin']) {
-                        echo "<p class='msg g'>".$_SESSION['admin']."</p>";
+                        echo "<p class='msg g' style='width: 200px>".$_SESSION['admin']."</p>";
                         unset($_SESSION['admin']);
                     }
                     ?>

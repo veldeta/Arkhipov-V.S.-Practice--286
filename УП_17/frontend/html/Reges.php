@@ -41,16 +41,24 @@ if($_COOKIE['admin']){
 
                         <?php
                             if($_SESSION['message']){
-                              echo ' <p class="mgs"> ' . $_SESSION['message'] .  ' </p>';
+                              echo ' <p class="mgs g"> ' . $_SESSION['message'] .  ' </p>';
                             }
                             unset($_SESSION['message']);
                         ?>
+
 
 					<input type="submit" name="submit" value="Зарегистрироваться" class="btn btn-primary sub">
 				</form>
 
 		    </div>
-		    <div class="col"></div>
+		    <div class="col">
+                <?php
+                    if($_SESSION['error']){
+                        echo ' <p class="mgs g" style="margin-top: 17pc"> ' . $_SESSION['error'] .  ' </p>';
+                    }
+                    unset($_SESSION['error']);
+                ?>
+            </div>
 	 	</div>
 	</div>
 
